@@ -12,21 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(call my-dir)
-
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
-
-# Copy fonts to system
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/extras/fonts,$(TARGET_COPY_OUT_SYSTEM)/fonts)
-
-# Include prebuilts packages
-include vendor/extras/Prebuilts/Prebuilts.mk
-
-# Include ColorBucket themes
-include vendor/extras/ColorBucket/ColorBucket.mk
-
-# Include GesturePill
-include vendor/extras/GesturePill/GesturePill.mk
-
-# Include QsThemes
-include vendor/extras/QsThemes/QsThemes.mk
+# QS tile styles
+PRODUCT_PACKAGES += \
+    QStileCircleTrim \
+    QStileDefault \
+    QStileDualToneCircle \
+    QStileSquircleTrim
