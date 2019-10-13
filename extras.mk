@@ -16,6 +16,9 @@ LOCAL_PATH := $(call my-dir)
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
+# Copy fonts to system
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/extras/fonts,$(TARGET_COPY_OUT_SYSTEM)/fonts)
+
 # Include prebuilts packages
 include vendor/extras/Prebuilts/Prebuilts.mk
 
