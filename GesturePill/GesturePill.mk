@@ -12,15 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(call my-dir)
-
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
-
-# Include prebuilts packages
-include vendor/extras/Prebuilts/Prebuilts.mk
-
-# Include ColorBucket themes
-include vendor/extras/ColorBucket/ColorBucket.mk
-
-# Include GesturePill
-include vendor/extras/GesturePill/GesturePill.mk
+# Gestural pill
+PRODUCT_PACKAGES += \
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium
