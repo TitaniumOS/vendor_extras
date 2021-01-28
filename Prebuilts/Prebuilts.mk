@@ -17,7 +17,7 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/extras/Prebuilts/et
 
 # Prebuilt packages
 PRODUCT_PACKAGES += \
-    MetroMusicPlayer \
-    NexusLauncherRelease \
-    SimpleGallery \
-    ViaBrowser
+    GalleryGo \
+    ViaBrowser \
+    OPLauncher2 \
+    OnePlusRecentsProvider
