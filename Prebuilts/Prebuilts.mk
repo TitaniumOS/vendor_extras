@@ -19,5 +19,5 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/extras/Prebuilts/et
 PRODUCT_PACKAGES += \
     GalleryGo \
     ViaBrowser \
-    OPLauncher2 \
+    OPLauncherReleases \
     OnePlusRecentsProvider
